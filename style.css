@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6f7;
+}
+
+/* HEADER */
+
+header{
+    background:#0b8457;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:#065f46;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+    flex-wrap:wrap;
+}
+
+nav button{
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    background:white;
+    transition:0.3s;
+}
+
+nav button:hover{
+    background:#d1fae5;
+}
+
+/* PAGE */
+
+.page{
+    display:none;
+    padding:30px;
+}
+
+.active{
+    display:block;
+}
+
+/* SEARCH */
+
+#searchInput{
+    width:100%;
+    max-width:500px;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid gray;
+    margin-top:10px;
+}
+
+/* PRODUCT CARDS */
+
+#results{
+    margin-top:20px;
+    display:grid;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#0b8457;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav button{
+        width:90%;
+    }
+
+}
